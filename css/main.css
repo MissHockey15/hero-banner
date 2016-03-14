@@ -1,9 +1,10 @@
 html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
-*, *::before, *:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -18,24 +19,32 @@ html {
   max-height: 500px;
 }
 
+body {
+  margin: 0;
+}
+
 .banner-body {
-  position: relative;;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding-left: 1em;
+  width: 100%;
+  max-width: 45rem;
+  transform: translateX(-50%);
 }
 
 .title {
-  position: absolute;
-  bottom: 0;
-  left:0;
   display: inline;
   font-size: 4rem;
   line-height: 1.4;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
 
 p {
   font-size: 2rem;
-  font-size: italic;
+  font-style: italic;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
 }
